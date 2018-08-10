@@ -11,8 +11,6 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { //eslint-disable-line
     var output = a + b;
     var message = "The sum of " + a + " and " + b + " is " + output + '.';
-    console.log('The sum of 4 and 7 is 11');
-    console.log(message);
     return [output, message];
 
 }
@@ -32,11 +30,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+    var output = a * b;
+    var message = 'The product of ' + a + ' and ' + b + ' is ' + output + '.';
+    return [output, message];
+        
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -51,7 +52,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
-// Write your code here
+// Write your code here --notes return an array with 4 elements and not two.. use pre existing sum and multiply functions, not arithmatic operators
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 
 }
