@@ -60,12 +60,12 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
     var multiplyTwo = multiply(multiplyOne[0],c);
     var messageOne = a + ' and ' + b + ' and ' + c + ' sum to ' + sumTwo[0] + '.';
     var messageTwo = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiplyTwo[0] + '.';
-    console.log('sumOne',sumOne[0]);
-    console.log('sumTwo',sumTwo[0]);
-    console.log('multiplyOne',multiplyOne[0]);
-    console.log('multiplyTwo',multiplyTwo[0]);
-    console.log('MessageOne',messageOne);
-    console.log('MessageTwo',messageTwo);
+    // console.log('sumOne',sumOne[0]);
+    // console.log('sumTwo',sumTwo[0]);
+    // console.log('multiplyOne',multiplyOne[0]);
+    // console.log('multiplyTwo',multiplyTwo[0]);
+    // console.log('MessageOne',messageOne);
+    // console.log('MessageTwo',messageTwo);
     return [sumTwo[0], multiplyTwo[0], messageOne, messageTwo];
     
 }
@@ -89,12 +89,17 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+    var sumThree = sum(sumArr[0],sumArr[1])[0];
+    var sumFour = sum(sumThree,sumArr[2]);
+    var messageThree = sumArr + ' was passed in as an array of numbers, and ' + sumFour[0] + ' is their sum.';
+    console.log('sumArray',sumFour);
+    console.log('messageThree',messageThree);
+    return [sumFour[0],messageThree];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
