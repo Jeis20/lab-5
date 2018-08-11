@@ -54,11 +54,24 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here --notes return an array with 4 elements and not two.. use pre existing sum and multiply functions, not arithmatic operators
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+    var sumOne = sum(a,b);
+    var sumTwo = sum(sumOne[0],c);
+    var multiplyOne = multiply(a,b);
+    var multiplyTwo = multiply(multiplyOne[0],c);
+    var messageOne = a + ' and ' + b + ' and ' + c + ' sum to ' + sumTwo[0] + '.';
+    var messageTwo = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiplyTwo[0] + '.';
+    console.log('sumOne',sumOne[0]);
+    console.log('sumTwo',sumTwo[0]);
+    console.log('multiplyOne',multiplyOne[0]);
+    console.log('multiplyTwo',multiplyTwo[0]);
+    console.log('MessageOne',messageOne);
+    console.log('MessageTwo',messageTwo);
+    return [sumTwo[0], multiplyTwo[0], messageOne, messageTwo];
+    
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
